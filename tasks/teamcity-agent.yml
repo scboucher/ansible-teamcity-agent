@@ -73,8 +73,7 @@
     group: "{{ teamcity_agent_group }}"
     mode: 0755
 
-- name: "Ensure TeamCity Agent is running"
+- name: "Ensure TeamCity Agent is enabled"
   service:
     name: teamcity-agent
-    state: started
     enabled: yes
