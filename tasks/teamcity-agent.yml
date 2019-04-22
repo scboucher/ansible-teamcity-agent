@@ -12,7 +12,7 @@
     name: "{{ item }}"
     state: present
     update_cache: yes
-  with_items:
+  loop:
        - zip
 
 - name: "Create Agent Build dir"
